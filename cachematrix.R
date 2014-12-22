@@ -35,7 +35,7 @@ cacheSolve <- function(x, ...) {
       return(xinv)
     }
     data <- x$get()
-    xinv <- solve(data)
+    xinv <- solve(data, ...)
     x$setinv(xinv)
     xinv
 }
